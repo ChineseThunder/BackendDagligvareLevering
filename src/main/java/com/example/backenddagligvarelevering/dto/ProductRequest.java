@@ -21,5 +21,10 @@ public class ProductRequest {
 
     private int weight;
 
-
+    public ProductRequest(Product p) {
+        this.id = p.getId();
+        this.name = p.getName();
+        this.price = p.getPrice();
+        this.weight = p.getWeight();
+    }
 }
